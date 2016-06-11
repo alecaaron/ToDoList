@@ -1,0 +1,109 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+$full: 100%;
+
+@mixin material_level($level, $color){
+        -webkit-box-shadow: 4px 12px (10px * $level) 4px $color;
+        box-shadow: 4px 12px (10px * $level) 4px $color;
+}
+
+
+body{
+    height: $full;
+    width: $full;
+    background: #7fffd4;
+    font-size: 100%;
+    font-family: 'Roboto';
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.5rem; }
+    h3 { font-size: 1.17rem; }
+    h4 { font-size: 1.12rem; }
+    h5 { font-size: .83rem; }
+    h6 { font-size: .75rem; }
+    .done{
+        text-decoration: line-through;
+        background-color: grey;
+        font-style: italic;
+        &:after{
+            content: "delete";
+            width: 3.75rem;
+            height: $full;
+            text-align: center;
+            float:right;
+            font-style: normal;
+            font-variant: small-caps;
+            background-color: dimgray;
+            color: red;
+        }
+    }
+    .inProgress{
+        background-color: green;
+    }
+    #wrapper{
+        height: 30rem;
+        width: 30rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5rem;
+        h1{
+            width: $full;
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+        section:nth-of-type(1){
+            width: 18rem;
+            height: 18rem;
+            padding: 1rem;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: white;
+            @include material_level(4, #444);
+            border: none;
+            ul{
+                width: $full;
+                li{
+                    cursor: pointer;
+                    font-weight: bold;
+                    width: $full;
+                    height: 2rem;
+                    vertical-align: middle;
+                    line-height: 2rem;
+                }
+                
+            }
+        }
+        section:nth-of-type(2){
+            width: 20rem;
+            height: 3rem;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 2rem;
+            input[type="text"]{
+                height: 2rem;
+                width: 8rem;
+                padding-left: .5rem;
+                padding-right: .5rem;
+                box-shadow: 4px 4px (10px * 1.5) 4px #444;
+                border: none;
+                margin-left: 1rem;
+                margin-right: 1rem;
+            }
+            input[type="button"]{
+                border:none;
+                width: 3.5rem;
+                height: 3.5rem;
+                border-radius: 50%;
+                & #addTask{
+                    display: none;
+                }
+            }
+            
+        }
+        
+    }
+}

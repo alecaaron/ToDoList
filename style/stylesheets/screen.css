@@ -1,0 +1,193 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+/* line 17, ../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../Ruby200-x64/lib/ruby/gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 16, ../sass/screen.scss */
+body {
+  height: 100%;
+  width: 100%;
+  background: #7fffd4;
+  font-size: 100%;
+  font-family: 'Roboto';
+}
+/* line 22, ../sass/screen.scss */
+body h1 {
+  font-size: 2rem;
+}
+/* line 23, ../sass/screen.scss */
+body h2 {
+  font-size: 1.5rem;
+}
+/* line 24, ../sass/screen.scss */
+body h3 {
+  font-size: 1.17rem;
+}
+/* line 25, ../sass/screen.scss */
+body h4 {
+  font-size: 1.12rem;
+}
+/* line 26, ../sass/screen.scss */
+body h5 {
+  font-size: .83rem;
+}
+/* line 27, ../sass/screen.scss */
+body h6 {
+  font-size: .75rem;
+}
+/* line 28, ../sass/screen.scss */
+body .done {
+  text-decoration: line-through;
+  background-color: grey;
+  font-style: italic;
+}
+/* line 32, ../sass/screen.scss */
+body .done:after {
+  content: "delete";
+  width: 3.75rem;
+  height: 100%;
+  text-align: center;
+  float: right;
+  font-style: normal;
+  font-variant: small-caps;
+  background-color: dimgray;
+  color: red;
+}
+/* line 44, ../sass/screen.scss */
+body .inProgress {
+  background-color: green;
+}
+/* line 47, ../sass/screen.scss */
+body #wrapper {
+  height: 30rem;
+  width: 30rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem;
+}
+/* line 53, ../sass/screen.scss */
+body #wrapper h1 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+/* line 58, ../sass/screen.scss */
+body #wrapper section:nth-of-type(1) {
+  width: 18rem;
+  height: 18rem;
+  padding: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  -webkit-box-shadow: 4px 12px 40px 4px #444444;
+  box-shadow: 4px 12px 40px 4px #444444;
+  border: none;
+}
+/* line 67, ../sass/screen.scss */
+body #wrapper section:nth-of-type(1) ul {
+  width: 100%;
+}
+/* line 69, ../sass/screen.scss */
+body #wrapper section:nth-of-type(1) ul li {
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+  height: 2rem;
+  vertical-align: middle;
+  line-height: 2rem;
+}
+/* line 80, ../sass/screen.scss */
+body #wrapper section:nth-of-type(2) {
+  width: 20rem;
+  height: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+}
+/* line 86, ../sass/screen.scss */
+body #wrapper section:nth-of-type(2) input[type="text"] {
+  height: 2rem;
+  width: 8rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  box-shadow: 4px 4px 15px 4px #444444;
+  border: none;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+/* line 96, ../sass/screen.scss */
+body #wrapper section:nth-of-type(2) input[type="button"] {
+  border: none;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+}
+/* line 101, ../sass/screen.scss */
+body #wrapper section:nth-of-type(2) input[type="button"] #addTask {
+  display: none;
+}
